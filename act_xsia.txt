@@ -1,0 +1,885 @@
+NBR_ALM: 68
+/* Début de programmation distante*/
+ALM_NUM: 10
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Fin de programmation distante*/
+ALM_NUM: 20
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Echec de programmation distante*/
+ALM_NUM: 30
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Alarme intrusion 1*/
+ALM_NUM: 40
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Annulation alarme intrusion 1*/if
+ALM_NUM: 50
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Restauration Alarme intrusion 1*/
+ALM_NUM: 60
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Exclusion zone intrusion 1*/
+ALM_NUM: 70
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Ré-inclusion zone intrusion 1*/
+ALM_NUM: 80
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Armement normal 1 */
+ALM_NUM: 90
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Désarmement normal 1 */
+ALM_NUM: 100
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Désarmement après alarme 1*/
+ALM_NUM: 110
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Alarme intrusion 2*/
+ALM_NUM: 120
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Annulation alarme intrusion 2*/
+ALM_NUM: 130
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Restauration Alarme intrusion 2*/
+ALM_NUM: 140
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Exclusion zone intrusion 2*/
+ALM_NUM: 150
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Ré-inclusion zone intrusion 2*/
+ALM_NUM: 160
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Armement normal 2 */
+ALM_NUM: 170
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Désarmement normal 2 */
+ALM_NUM: 180
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Désarmement après alarme 2*/
+ALM_NUM: 190
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Alarme intrusion 3*/
+ALM_NUM: 200
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Annulation alarme intrusion 3*/
+ALM_NUM: 210
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Restauration Alarme intrusion 3*/
+ALM_NUM: 220
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Exclusion zone intrusion 3*/if
+ALM_NUM: 230
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Ré-inclusion zone intrusion 3*/
+ALM_NUM: 240
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Armement normal 3 */
+ALM_NUM: 250
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Désarmement normal 3 */
+ALM_NUM: 260
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Désarmement après alarme 3*/
+ALM_NUM: 270
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Alarme intrusion 4*/
+ALM_NUM: 280
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Annulation alarme intrusion 4*/
+ALM_NUM: 290
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Restauration Alarme intrusion 4*/
+ALM_NUM: 300
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Exclusion zone intrusion 4*/
+ALM_NUM: 310
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Ré-inclusion zone intrusion 4*/
+ALM_NUM: 320
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Armement normal 4 */
+ALM_NUM: 330
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Désarmement normal 4 */
+ALM_NUM: 340
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Désarmement après alarme 4*/
+ALM_NUM: 350
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Alarme intrusion 020*/
+ALM_NUM: 360
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Annulation alarme intrusion 020*/
+ALM_NUM: 370
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Restauration Alarme intrusion 020*/
+ALM_NUM: 380
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Exclusion zone intrusion 020*/
+ALM_NUM: 390
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Ré-inclusion zone intrusion 020*/
+ALM_NUM: 400
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Armement normal 020 */
+ALM_NUM: 410
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Désarmement normal 020 */
+ALM_NUM: 420
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Désarmement après alarme 020*/
+ALM_NUM: 430
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Alarme incendie 6*/
+ALM_NUM: 440
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Restauration Alarme incendie 6*/
+ALM_NUM: 450
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Exclusion zone incendie 6*/
+ALM_NUM: 460
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Ré-inclusion zone incendie 6*/
+ALM_NUM: 470
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Alarme incendie 7*/
+ALM_NUM: 480
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Restauration Alarme incendie 7*/
+ALM_NUM: 490
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Exclusion zone incendie 7*/
+ALM_NUM: 500
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Ré-inclusion zone incendie 7*/
+ALM_NUM: 510
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Alarme autoprotection Zone,Centralen,Sirene 3*/
+ALM_NUM: 520
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Fin d’autoprotection 3 */
+ALM_NUM: 530
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Alarme autoprotection Zone,Centralen,Sirene 4 */
+ALM_NUM: 540
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Fin d’autoprotection 4 */
+ALM_NUM: 550
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Restauration d’autoprotection DGP/RAS*/
+ALM_NUM: 560
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Fin d’exclusion DGP/RAS Centrale , DGP ou RAS*/
+ALM_NUM: 570
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Alarme d’autoprotection DGP/RAS*/
+ALM_NUM: 580
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Restauration d’autoprotection DGP/RAS*/
+ALM_NUM: 590
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Isolation DGP/RAS*/
+ALM_NUM: 600
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Défaut de sortie 2*/
+ALM_NUM: 610
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Défaut de sortie 6*/
+ALM_NUM: 620
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/* Défaut de sortie 7*/
+ALM_NUM: 630
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Défaut batterie */
+ALM_NUM: 640
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Début du test de marche sur la zone */
+ALM_NUM: 650
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Fin du test de marche sur la zone */
+ALM_NUM: 660
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Restauration scrutation CS (Heartbeat OH) */
+ALM_NUM: 670
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
+/*Restauration défaut de communication (FTC) ou bus MI */
+ALM_NUM: 680
+ALM_OUT: 0xF
+ALM_MASK: 0
+ALM_CHG: 0
+ALM_STATUS: 0x11
+ALM_SCNEW:	begin
+	info
+end
+ALM_SCOLD:	begin
+	info
+end
+
