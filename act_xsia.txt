@@ -884,8 +884,10 @@ ALM_SCOLD:	begin
 			end
 
 /* COMMANDES */
+
 NBR_CMD: 1
 
+/**/
 CMD_NUM: 10
 CMD_OUT: 0xF
 CMD_STATUS: 1

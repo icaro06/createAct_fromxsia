@@ -1,3 +1,4 @@
+/*Créer un fichier Act à partir d'un fichier xsia A.Villanueva*/
 package main
 
 import (
@@ -9,58 +10,66 @@ import (
 )
 
 func main() {
-	//Analizar si hay argumentos
+	var err error
+	alms := 0 //Nombre d'alarmes créées
+	cmds := 1 //Nombre de cmd créés
 
-	alms := 0 //Numero de alarmas creadas
-	space := 10
+	space := 10 //Espace entre les alarmes et les commandes
 
-	cmds := 1 //Numero de cmds creados
-
-	comentario := "/**/" //Recupera los comentarios del fichero de configuracion cfg
+	comentario := "/**/" //Récupère les commentaires du fichier de configuration cfg
 
 	lignes := 0 //Num de ligne
 
+	//Analysez s'il y a des arguments
 	if len(os.Args) == 1 {
-		fmt.Println("Erreur args , example : makeAct nom_fichier ")
+		fmt.Println("Erreur args \n Example : makeAct nom_fichier.cfg ")
 		os.Exit(0)
 	}
 
-	// Abrir el primer archivo para lectura
-	entradaFile, err := os.Open("xsia.cfg")
+	// Ouvrir le premier fichier en lecture
+	//entradaFile, err := os.Open("xsia.cfg")
+
+	entradaFile, err := os.Open(os.Args[1])
 	if err != nil {
 		fmt.Println("Erreur lors de l'ouverture du fichier d'entrée : ", err)
 		return
 	}
 	defer entradaFile.Close()
 
-	// Crear el segundo archivo para escritura
-	salidaFile, err := os.Create("act_xsia.txt")
+	// Créer le deuxième fichier pour l'écriture
+
+	//supprimer la partie après le point
+	parts := strings.Split(os.Args[1], ".")
+	result := strings.TrimSpace(parts[0])
+
+	salidaFile, err := os.Create("act_" + result + ".txt") //fichier avec act_
 	if err != nil {
 		fmt.Println("Erreur lors de la création du fichier de sortie :", err)
 		return
 	}
 	defer salidaFile.Close()
 
-	// Leer el contenido del archivo de entrada línea por línea
+	// Lire le contenu du fichier d'entrée ligne par ligne
 	scanner := bufio.NewScanner(entradaFile)
 
 	//writeNumAlms(salidaFile, alms) //Write Num Alms Virtuelle
 
-	for scanner.Scan() {
+	for scanner.Scan() { //Analyser le fichier d'entrée pour écrire chaque ALM
 		linea := scanner.Text()
 		lignes++ //numéro de la ligne actuelle
 
-		if strings.Contains(linea, "/*") { //Copia comentario /**/
+		if strings.Contains(linea, "/*") { /* copier le commentaire */
 			comentario = linea
 		}
 
-		if strings.Contains(linea, "NBR_ALM:") { //Copia  NBR_ALM:
+		if strings.Contains(linea, "NBR_ALM:") { //Copier  NBR_ALM:
 			fmt.Fprintln(salidaFile, linea)
+			//writeNumAlms(salidaFile, alms)
 		}
 
-		// Verificar si la línea contiene la entrada "ALM_VALUE"
+		// Vérifiez si la ligne contient l'entrée "ALM_VALUE"
 		if strings.Contains(linea, "ALM_VALUE:") {
-			// Obtener el valor de ALM_VALUE como entero
+			// Obtenir la valeur de ALM_VALUE sous la forme d'un entier INT
 			valorStr := strings.TrimSpace(strings.TrimPrefix(linea, "ALM_VALUE:"))
 			valor, err := strconv.Atoi(valorStr)
 			if err != nil {
@@ -69,20 +78,21 @@ func main() {
 				return
 			}
 
-			// Escribir las entradas proporcionales al valor de ALM_VALUE en el archivo de salida
+			// Écrire les entrées proportionnelles à la valeur de ALM_VALUE dans le fichier de sortie
 			writeAlm(salidaFile, comentario, valor)
 			alms++
 		}
 	}
 
-	//Write cmd
+	//Write num. cmds
 	writeNumCmds(salidaFile, cmds) //Write Num Alms Virtuelle
 
+	//écrire des commandes
 	for cmd := space; cmd <= cmds*space; cmd += space {
-		writeCmd(salidaFile, "", cmd)
-
+		writeCmd(salidaFile, "/**/", cmd)
 	}
 
+	//écrire la dernière partie act
 	writeEnd(salidaFile)
 
 	if err := scanner.Err(); err != nil {
@@ -90,12 +100,11 @@ func main() {
 		return
 	}
 
-	fmt.Println("Archivo de salida creado exitosamente.")
+	fmt.Println("Fichier de sortie créé avec succès.")
 
 }
 
 func writeNumAlms(salidaFile *os.File, valor int) {
-	fmt.Fprintln(salidaFile, "/* COMMANDES */\n")
 	fmt.Fprintln(salidaFile, "NBR_ALM:", valor)
 	fmt.Fprintln(salidaFile, "\n")
 }
@@ -117,8 +126,9 @@ func writeAlm(salidaFile *os.File, comentario string, valor int) {
 }
 
 func writeNumCmds(salidaFile *os.File, valor int) {
-	fmt.Fprintln(salidaFile, "/* COMMANDES */")
+	fmt.Fprintln(salidaFile, "/* COMMANDES */\n")
 	fmt.Fprintln(salidaFile, "NBR_CMD:", valor)
+	fmt.Fprintln(salidaFile, "")
 }
 
 func writeCmd(salidaFile *os.File, comentario string, valor int) {
