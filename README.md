@@ -1,4 +1,5 @@
 # createAct
-Petite aide pour faire des fichiers act, à partir d'un fichier
-avec différentes lignes avec ALM_VALUE : 
-crée un squelette ACT vide
+Petite aide pour faire des fichiers act, à partir d'un fichier xsia.cfg
+crée un squelette Act  de base, 
+en copiant les alarmes et les commentaires du fichier de configuration
+
