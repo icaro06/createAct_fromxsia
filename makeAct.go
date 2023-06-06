@@ -68,10 +68,10 @@ func main() {
 		}
 
 		// Vérifiez si la ligne contient l'entrée "ALM_VALUE"
-		if strings.Contains(linea, "ALM_NUM:") {
+		if strings.Contains(linea, "ALM_VALUE:") {
 
 			// Obtenir la valeur de ALM_VALUE sous la forme d'un entier INT
-			valorStr := strings.TrimSpace(strings.TrimPrefix(linea, "ALM_NUM:"))
+			valorStr := strings.TrimSpace(strings.TrimPrefix(linea, "ALM_VALUE:"))
 			valor, err := strconv.Atoi(valorStr)
 			if err != nil {
 				fmt.Println("Erreur num ligne :", lignes)
